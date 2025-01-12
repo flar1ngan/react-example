@@ -1,0 +1,92 @@
+/* Стили для общего контейнера */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-top: 20px;
+}
+
+.App {
+  max-width: 600px;
+  margin: 20px auto;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.TaskInput {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.TaskInput input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.TaskInput button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.TaskInput button:hover {
+  background-color: #0056b3;
+}
+
+/* Стили для TaskList */
+.TaskList ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.TaskList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 5px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.TaskList li span {
+  cursor: pointer;
+}
+
+.TaskList li span.completed {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.TaskList button {
+  padding: 5px 10px;
+  border: none;
+  background-color: #ff4d4d;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.TaskList button:hover {
+  background-color: #d93636;
+}
